@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "service_name": "CMS DataLogger",
+    "devices":{
+        "VB22":{
+            "Address": 205,
+            "Model": 34,
+            "eigenvalue_upload_rate": 20,
+            "sample_freq": "10",
+            "wave_length": "01000010"
+            }
+    },
+    "serial_cfg": {
+        "port": "COM14",
+        "baud_rate": 115200,
+        "timeout": 2,
+        "read_size": 40
+    },
+    "task_manager": {
+        "queue_size": 50000
+    },
+    "file_store":{
+        "eigenvalue":{
+                "file_store_directory": "D:"
+            },
+        "rawwave":{
+                "file_store_directory": "D:",
+                "rawwave_upload_rate": 120,
+                "rawwave_upload_interval": 120
+            }
+    }
+}

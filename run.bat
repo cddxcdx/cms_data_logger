@@ -1,0 +1,1 @@
+D:\software\Anaconda3\python.exe main.py
